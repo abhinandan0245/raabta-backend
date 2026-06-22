@@ -44,8 +44,9 @@ const server = http.createServer(app);
 // Make io globally accessible
 global.io = new Server(server, {
     cors: {
-        origin: process.env.CLIENT_URL || "http://localhost:5173" || "http://localhost:5174" || "http://localhost:5175",
+        origin: process.env.CLIENT_URL || "https://raabta-chat.netlify.app" ||  "http://localhost:5173" || "http://localhost:5174" || "http://localhost:5175",
         methods: ["GET", "POST"],
+        credentials: true,
     },
 });
 

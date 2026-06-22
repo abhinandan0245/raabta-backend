@@ -15,6 +15,7 @@ const app = express();
 // Core middlewares
 const allowedOrigins = [
   process.env.CLIENT_URL,
+  "https://raabta-chat.netlify.app",
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175"
